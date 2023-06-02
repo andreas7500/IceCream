@@ -1,0 +1,117 @@
+/* ---------MODAL WINDOW-------- */
+
+.modal-franchise {
+  height: 100vh;
+
+  max-height: 674px;
+  overflow-y: scroll;
+  @media screen and (min-width: 768px) {
+    padding: 32px 40px;
+    max-height: 668px;
+  }
+  @media screen and (min-width: 1200px) {
+    overflow-y: hidden;
+  }
+}
+
+.modal-franchise__descr {
+  margin: auto;
+  margin-bottom: 24px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0em;
+  color: $dark-color;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.37;
+    letter-spacing: -0.005em;
+    margin-bottom: 32px;
+  }
+}
+
+/* ------ Form data ----- */
+.modal-franchise__form {
+  width: 224px;
+  margin: auto;
+  font-size: 12px;
+  line-height: 1.41;
+  letter-spacing: 0em;
+  color: $dark-color;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.42;
+    width: 368px;
+  }
+}
+.modal-franchise__input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid $main-color;
+  border-radius: 10px;
+  background-color: $input-color;
+  margin-bottom: 12px;
+  outline: 1px solid transparent;
+  @include transition(outline);
+  @include transition(background-color);
+  @media screen and (min-width: 768px) {
+    padding: 11px 16px;
+    margin-bottom: 16px;
+  }
+}
+.modal-franchise__input.modal-franchise__textarea {
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+.modal-franchise__textarea {
+  display: block;
+  resize: none;
+}
+
+.modal__btn_form {
+  padding: 12px 34px;
+  margin: auto;
+  height: 42px;
+  background-color: $button-default;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: none;
+  @include transition();
+  @include transition(background-color);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.input:focus-within,
+.input:hover {
+  outline-color: $button-hover;
+}
+
+.input:not(:placeholder-shown):required:valid {
+  border-color: $button-hover;
+}
+.input:not(:placeholder-shown):required:invalid {
+  outline-color: rgb(241, 105, 105);
+  background-color: rgba(232, 173, 173, 0.15);
+}
+
+.modal__btn_form:focus {
+  background: $button-hover;
+  color: $white-color;
+}
+.modal__btn_form:hover {
+  background: $button-hover;
+}
+// .modal__btn_form.disable {
+//   background-color: #ababab;
+// }

@@ -1,0 +1,65 @@
+.modal-location {
+  height: 100vh;
+  overflow-y: scroll;
+  max-height: 365px;
+  @media screen and (min-width: 768px) {
+    max-height: 458px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 458px;
+    width: 568px;
+    overflow-y: hidden;
+  }
+}
+.modal__map {
+  width: 224px;
+  height: 199px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px;
+  }
+}
+
+.modal__map--mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.modal__map--tablet-desktop {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.modal-location__button {
+  display: flex;
+  margin: auto;
+  width: 134px;
+  height: 42px;
+  background-color: $button-default;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #131313;
+  letter-spacing: 0;
+  &:hover {
+    background-color: $button-hover;
+  }
+  &:focus {
+    color: $white-color;
+  }
+  @include transition();
+  @include transition(background-color);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}

@@ -1,0 +1,46 @@
+@import './common';
+// ! Шрифти
+@import url(https://fonts.googleapis.com/css?family=Seymour+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900);
+
+// ! Змінні, міксіни, плейсхолдери
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+// !Базові налаштування
+@import './base';
+
+// Animations
+@import './animations';
+
+// ! Partials
+
+// Валентина
+@import './header/header';
+@import './header/menu';
+@import './header/header-button';
+// Яна
+@import './hero/hero';
+// Іра Левченко
+@import './modal-hero/modal-hero';
+// Ткаченко Сергій
+@import './products/products';
+// Ткаченко Анна
+@import './modal-products/modal-products';
+// Микола
+@import './about/about';
+@import './about/modal-about';
+// Андрей
+@import './advantages/advantages';
+// Данило
+@import './gallery/gallery';
+@import './reviews/reviews';
+// Аліна
+@import './contacts/contacts';
+
+// Іскра
+@import './modal-franchise/modal-franchise';
+@import './modal-locations/modal-locations';
+// Алекс
+@import './footer/footer';
